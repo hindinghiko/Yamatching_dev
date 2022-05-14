@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:line_icons/line_icons.dart';
 import 'package:yamatching/UI/components/search_condition_card.dart';
 import 'package:yamatching/constants/constants.dart';
 
@@ -21,17 +22,17 @@ class _ToppageState extends State<Toppage> {
               title: "場所",
               caption: "県内",
               icon: Icon(Icons.house),
-              icon2: Icon(Icons.house)),
+              icon2: Icon(LineIcons.alipay)),
           SearchConditionCard(
               title: "標高",
               caption: "県",
-              icon: Icon(Icons.house),
-              icon2: Icon(Icons.house)),
+              icon: Icon(LineIcons.city),
+              icon2: Icon(LineIcons.mountain)),
           SearchConditionCard(
             title: "コースタイム",
             caption: "内",
             icon: Icon(Icons.house),
-            icon2: Icon(Icons.house),
+            icon2: Icon(LineIcons.flagAlt),
           ),
           Align(
             alignment: Alignment(1, 1),
