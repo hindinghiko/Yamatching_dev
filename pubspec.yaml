@@ -28,6 +28,9 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
+  assets:
+    - images/tsurugisan.jpg
+
 
   fonts:
     - family: WaterBrush
@@ -41,6 +44,7 @@ flutter:
     - family: KaiseiOpti-Bold
       fonts:
         - asset: fonts/KaiseiOpti-Bold.ttf
+    
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
