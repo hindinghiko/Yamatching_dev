@@ -65,7 +65,7 @@ class _MainPageState extends State<MainPage> {
           BottomNavigationBarItem(icon: Icon(Icons.face), label: "マイページ"),
         ],
         currentIndex: _currentIndex,
-        onTap: (Index) => setState(() => _currentIndex = Index),
+        onTap: (index) => setState(() => _currentIndex = index),
       ),
     );
   }

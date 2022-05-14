@@ -18,11 +18,21 @@ class _ToppageState extends State<Toppage> {
       child: Column(
         children: [
           SearchConditionCard(
-              title: "場所", caption: "県内", icon: Icon(Icons.house)),
+              title: "場所",
+              caption: "県内",
+              icon: Icon(Icons.house),
+              icon2: Icon(Icons.house)),
           SearchConditionCard(
-              title: "場", caption: "県", icon: Icon(Icons.house)),
+              title: "標高",
+              caption: "県",
+              icon: Icon(Icons.house),
+              icon2: Icon(Icons.house)),
           SearchConditionCard(
-              title: "所", caption: "内", icon: Icon(Icons.house)),
+            title: "コースタイム",
+            caption: "内",
+            icon: Icon(Icons.house),
+            icon2: Icon(Icons.house),
+          ),
           Align(
             alignment: Alignment(1, 1),
             child: Padding(

@@ -8,11 +8,13 @@ class SearchConditionCard extends StatefulWidget {
       {required this.title,
       required this.caption,
       required this.icon,
+      required this.icon2,
       Key? key})
       : super(key: key);
   final String title;
   final String caption;
   final Icon icon;
+  final Icon icon2;
 
   @override
   State<SearchConditionCard> createState() => _SearchConditionCardState();
@@ -52,7 +54,7 @@ class _SearchConditionCardState extends State<SearchConditionCard> {
                       onChanged: _changeSlider,
                     ),
                   ),
-                  Icon(MdiIcons.imageFilterHdr),
+                  widget.icon2,
                 ],
               )
             ],
