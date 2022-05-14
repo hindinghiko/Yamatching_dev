@@ -1,8 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:line_icons/line_icons.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:yamatching/constants/constants.dart';
 
 class SearchConditionCard extends StatefulWidget {
-  const SearchConditionCard({Key? key}) : super(key: key);
+  const SearchConditionCard(
+      {required this.title,
+      required this.caption,
+      required this.icon,
+      Key? key})
+      : super(key: key);
+  final String title;
+  final String caption;
+  final Icon icon;
 
   @override
   State<SearchConditionCard> createState() => _SearchConditionCardState();
@@ -20,15 +30,15 @@ class _SearchConditionCardState extends State<SearchConditionCard> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text("場所"),
+        Text(widget.title),
         Card(
           color: Colors.green,
           child: Column(
             children: [
-              Text("県内"),
+              Text(widget.caption),
               Row(
                 children: [
-                  Icon(Icons.house),
+                  widget.icon,
                   SizedBox(
                     width: 200,
                     child: Slider(
@@ -42,7 +52,7 @@ class _SearchConditionCardState extends State<SearchConditionCard> {
                       onChanged: _changeSlider,
                     ),
                   ),
-                  Icon(Icons.airplanemode_active),
+                  Icon(MdiIcons.imageFilterHdr),
                 ],
               )
             ],
