@@ -29,7 +29,10 @@ dev_dependencies:
 # The following section is specific to Flutter.
 flutter:
   assets:
-    - images/tsurugisan.jpg
+    - images/tsurugisan.png
+    - images/kisokoma.png
+    - images/tsurugidake.png
+    - images/amagoidake.png
 
 
   fonts:

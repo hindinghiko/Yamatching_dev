@@ -12,11 +12,14 @@ class _FavoritePageState extends State<FavoritePage> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding:
-          const EdgeInsets.only(right: kPadding, left: kPadding, top: kPadding),
+      padding: const EdgeInsets.only(
+          right: kPadding, left: kPadding, top: kPadding, bottom: kPadding),
       child: Column(
         children: [
-          Image.asset('images/tsurugisan.jpg'),
+          Image.asset('images/tsurugisan.png'),
+          Image.asset('images/tsurugidake.png'),
+          Image.asset('images/amagoidake.png'),
+          Image.asset('images/kisokoma.png'),
           Container(),
         ],
       ),
