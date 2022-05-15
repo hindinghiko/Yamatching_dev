@@ -19,19 +19,27 @@ class _FavoritePageState extends State<FavoritePage> {
         // direction: Axis.vertical,
         // runSpacing: 20.0,
         children: [
-          MountainSelectionCard(),
+          MountainSelectionCard(
+            imageURL: 'images/amagoidake.png',
+          ),
           SizedBox(
             height: kPadding,
           ),
-          Image.asset('images/tsurugidake.png'),
+          MountainSelectionCard(
+            imageURL: 'images/tsurugidake.png',
+          ),
           SizedBox(
             height: kPadding,
           ),
-          Image.asset('images/amagoidake.png'),
+          MountainSelectionCard(
+            imageURL: 'images/tsurugisan.png',
+          ),
           SizedBox(
             height: kPadding,
           ),
-          Image.asset('images/kisokoma.png'),
+          MountainSelectionCard(
+            imageURL: 'images/kisokoma.png',
+          ),
           SizedBox(
             height: kPadding,
           ),
